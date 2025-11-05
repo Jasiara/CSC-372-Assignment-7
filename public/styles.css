@@ -1,0 +1,143 @@
+/* General reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #37bbc5, #c752d2);
+  min-height: 100vh;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+main {
+  max-width: 900px;
+  width: 100%;
+  background: rgba(0,0,0,0.6);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+
+section {
+  background: rgba(255,255,255,0.1);
+  padding: 20px;
+  border-radius: 15px;
+  margin-bottom: 25px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+section h2 {
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+  border-bottom: 2px solid rgba(255,255,255,0.4);
+  padding-bottom: 5px;
+}
+
+button {
+  background: #ffca3a;
+  color: #222;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+button:hover {
+  background: #ffde59;
+  transform: scale(1.05);
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+}
+
+#randomJoke, #addResult {
+  background: rgba(255,255,255,0.15);
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 10px;
+  min-height: 40px;
+}
+/* Categories list styling */
+#catList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;       /* space between category buttons */
+  margin-top: 10px;
+}
+
+#catList button {
+  flex: none;
+  padding: 8px 15px;
+  font-size: 1rem;
+}
+
+/* Jokes list styling */
+#jokeList {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;      /* space between jokes */
+  margin-top: 10px;
+}
+
+#jokeList div {
+  padding-left: 15px;   /* indent each joke */
+  border-left: 3px solid rgba(255,255,255,0.3);
+}
+
+#search {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+#search input {
+  flex: 1;
+}
+
+#addForm input {
+  display: block;
+  width: 100%;
+}
+
+#addForm button {
+  width: 100%;
+  margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+  main {
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  section h2 {
+    font-size: 1.4rem;
+  }
+}
